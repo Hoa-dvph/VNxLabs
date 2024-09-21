@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNxLabs - Explore Opportunities</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="font-sans bg-white">
+    <div class="container mx-auto px-4 py-6">
+        <div class="header flex items-center justify-between bg-white p-4 shadow-md">
+            <!-- Logo -->
+            <div class="logo flex-shrink-0 mr-8">
+                <img src="../Home/assets/images/Vector.svg" alt="VNxLabs Logo" class="w-32 h-auto">
+            </div>
+
+            <!-- Navigation Bar -->
+            <div class="nav-bar flex-grow">
+                <ul class="flex space-x-6">
+                    <li class="relative group">
+                        <a href="#" class="flex items-center text-gray-800 hover:text-blue-600">
+                            Explore <span class="ml-2"><i class="fas fa-caret-down"></i></span>
+                        </a>
+                        <ul
+                            class="absolute left-0 mt-2 hidden w-48 bg-white border border-gray-200 shadow-lg submenu group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 1</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 2</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Option 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">Asset</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">Jobs</a></li>
+                    <li><a href="#" class="text-gray-800 hover:text-blue-600">Behance <span
+                                class="bg-blue-600 text-white text-xs px-2 py-1 rounded ml-1">Pro</span></a></li>
+                    <li class="relative group">
+                        <a href="#" class="flex items-center text-gray-800 hover:text-blue-600">
+                            Hire Freelancers <span class="ml-2"><i class="fas fa-caret-down"></i></span>
+                        </a>
+                        <ul
+                            class="absolute left-0 mt-2 hidden w-48 bg-white border border-gray-200 shadow-lg submenu group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Freelancer 1</a>
+                            </li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Freelancer 2</a>
+                            </li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Freelancer 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Notifications -->
+            <div class="notifications flex-shrink-0 mr-4">
+                <img src="./assets/images/Notifications.svg" alt="" class="w-4 h-auto"> <!-- Reduced size -->
+            </div>
+
+            <!-- Sign In / Sign Up -->
+            <div class="flex items-center space-x-4">
+                <div
+                    class="sign-in cursor-pointer border border-gray-300 rounded-full px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-blue-600">
+                    <p>Sign In</p>
+                </div>
+                <div class="sign-up cursor-pointer bg-blue-600 text-white rounded-full px-4 py-2 hover:bg-blue-700">
+                    <p>Sign Up</p>
+                </div>
+            </div>
+
+            <!-- Adobe -->
+            <div class="adobe flex-shrink-0 mr-4 ml-4">
+                <img src="./assets/images/Adobe.svg" alt="" class="w-18 h-auto">
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <div class="sidebar mt-6" id="sidebar">
+        <button id="closeSidebar" class="close-btn">
+            <i class="fas fa-times"></i> <!-- Icon đóng -->
+        </button>
+        <button id="filterBtnSidebar" class="flex items-center space-x-2 mb-5">
+            <img src="./assets/images/setting.svg" alt="" class="w-5 h-5">
+            <span>Filter</span>
+        </button>
+
+        <!-- Sidebar Buttons -->
+        <ul class="sidebar-content-button">
+            <li><a href="#" class="sidebar-btn" data-target="project">Project</a></li>
+            <li><a href="#" class="sidebar-btn" data-target="assets">Assets</a></li>
+            <li><a href="#" class="sidebar-btn" data-target="images">Images</a></li>
+            <li><a href="#" class="sidebar-btn" data-target="people">People</a></li>
+        </ul>
+
+        <!-- Sidebar Content Service -->
+        <ul class="sidebar-content-service mt-6">
+            <!-- Project Content -->
+            <div class="service-content hidden" id="project">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-cubes mr-2"></i>Creative Fields</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-clock mr-2"></i>Availability</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Location</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-wrench mr-2"></i>Tools</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-palette mr-2"></i>Color</a>
+                </li>
+            </div>
+
+            <!-- Assets Content -->
+            <div class="service-content hidden" id="assets">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-tag icon mr-2"></i>Price</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-th-large icon mr-2"></i>Categories</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-file icon mr-2"></i>File Extensions</a>
+                </li>
+            </div>
+
+            <!-- Images Content -->
+            <div class="service-content hidden" id="images">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-cubes mr-2"></i>Creative Fields</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-wrench mr-2"></i>Tools</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-palette mr-2"></i>Color</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-camera mr-2"></i>Camera</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-video mr-2"></i>Lens</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-sun mr-2"></i>Exposure</a>
+                </li>
+            </div>
+
+            <!-- People Content -->
+            <div class="service-content hidden" id="people">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-cubes mr-2"></i>Creative Fields</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Location</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-wrench mr-2"></i>Tools</a>
+                </li>
+                <hr class="border-t border-gray-300 mt-2">
+                <li class="flex items-center justify-between">
+                    <a href="#" class="flex items-center"><i class="fas fa-clock mr-2"></i>Availability</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container mx-auto px-4 py-4">
+        <!-- Main -->
+        <div class="main-content" id="main-content">
+
+            <!-- Service -->
+            <div class="service flex items-center justify-between mb-6 mt-10">
+                <!-- Filter Button -->
+                <button id="filterBtn" class="btn flex items-center space-x-2">
+                    <img src="./assets/images/setting.svg" alt="" class="w-5 h-5">
+                    <span>Filter</span>
+                </button>
+
+                <!-- Search Box -->
+                <div class="search-box flex items-center space-x-2 flex-grow mx-4 rounded-full p-2">
+                    <img src="./assets/images/search.svg" alt="" class="w-5 h-5 ml-4">
+                    <input type="text" placeholder="Search the creative world at work" class="flex-grow px-4 py-0">
+                    <button class="btn flex items-center space-x-1">
+                        <img src="./assets/images/upload.svg" alt="" class="w-5 h-5">
+                        <span>Search by Image</span>
+                    </button>
+                </div>
+
+                <!-- Recommended Button -->
+                <button class="recommended flex items-center text-gray-800 hover:text-blue-600 cursor-pointer">
+                    Recommended <span class="ml-2"><i class="fas fa-caret-down"></i></span>
+                </button>
+            </div>
+
+            <!-- End service -->
+
+
+            <!-- PRODUCTS -->
+
+            <div class="grid-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Example Product Item -->
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!--  mô tả  -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- box thông tin  -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+
+                <div class="items mb-6 relative group">
+                    <!-- Ảnh -->
+                    <div class="items-img bg-gray-200 h-48 rounded-lg overflow-hidden relative">
+                        <img src="./assets/images/image.png" alt="" class="object-cover w-full h-full">
+
+                        <!-- Nút Save và Nhãn chỉ hiển thị khi hover vào ảnh -->
+                        <div
+                            class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <!-- Nút Save -->
+                            <div
+                                class="items-save bg-white text-gray-800 p-2 rounded-full shadow-md cursor-pointer flex items-center space-x-2 border border-gray-300 hover:bg-gray-100">
+                                <i class="fas fa-save text-lg"></i>
+                                <span class="font-medium">Save</span>
+                            </div>
+                        </div>
+
+                        <!-- Nhãn -->
+                        <div
+                            class="absolute top-0 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img src="./assets/images/label.png" alt="Label" class="w-12 h-12 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Nội dung mô tả dưới ảnh -->
+                    <div class="flex justify-between items-center mt-2 relative">
+                        <div class="items-text relative">
+                            <div class="text-lg font-semibold">Image Title</div>
+                            <div class="text-gray-600 author-name cursor-pointer">Author Name</div>
+                            <!-- Hover card -->
+                            <div class="author-card">
+                                <div class="image-gallery">
+                                    <div class="flex">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 1"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 2"
+                                            class="w-1/3 h-auto rounded-lg">
+                                        <img src="https://via.placeholder.com/100x60" alt="Image 3"
+                                            class="w-1/3 h-auto rounded-lg">
+                                    </div>
+                                    <img src="https://via.placeholder.com/60" alt="Avatar" class="avatar">
+                                </div>
+                                <div class="text-center mb-4">
+                                    <h3 class="text-xl font-semibold">Vitalii Mamchur</h3>
+                                    <p class="text-sm text-gray-500">Rivne, Ukraine</p>
+                                </div>
+                                <div class="flex justify-between mb-4 text-gray-600 text-sm">
+                                    <div class="flex flex-col items-center">
+                                        <strong>666</strong>
+                                        <span>Appreciations</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>199</strong>
+                                        <span>Followers</span>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <strong>5.4k</strong>
+                                        <span>Project Views</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button
+                                        class="w-full bg-blue-500 text-white py-2 rounded-full flex items-center justify-center mb-2">
+                                        <i class="fas fa-plus mr-2"></i> Follow
+                                    </button>
+                                    <button
+                                        class="w-full bg-gray-100 text-blue-500 py-2 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope mr-2"></i> Hire
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-4">
+                            <div class="items-like flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-heart"></i>
+                                <span>123</span>
+                            </div>
+                            <div class="items-view flex items-center space-x-1 text-gray-600">
+                                <i class="fas fa-eye"></i>
+                                <span>456</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End items -->
+            </div>
+
+            <!-- End items -->
+
+            <!-- END PRODUCTS -->
+
+
+            <!-- ------------------- CHECK LOGIN --------------------- -->
+            <div class="checklogin text-center mt-8">
+                <span class="block mb-4 text-gray-700">
+                    Sign up or <a href="#" class="underline text-blue-600 hover:text-blue-800">Sign In</a> to your
+                    account to view more work personalized to your preferences.
+                </span>
+
+                <div class="flex items-center justify-center space-x-4 mb-4">
+                    <a href="#"
+                        class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Sign
+                        Up With Email</a>
+                    <span class="text-gray-500 mx-2">or</span>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition duration-300">
+                            <i class="fab fa-apple text-gray-800 text-2xl"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition duration-300">
+                            <i class="fab fa-facebook-f text-blue-600 text-2xl"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition duration-300">
+                            <i class="fab fa-google text-red-600 text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Main -->
+
+    <!-- ------------------- FOOTER --------------------- -->
+
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+            <!-- Logo -->
+            <div class="logo flex-shrink-0 mr-8">
+                <img src="../Home/assets/images/Vector.svg" alt="VNxLabs Logo" class="w-32 h-auto filter-white">
+            </div>
+
+            <!-- Built For Creatives -->
+            <div>
+                <h3 class="font-semibold mb-4">Built For Creatives</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Try Behance Pro</a></li>
+                    <li><a href="#" class="hover:underline">Find Inspiration</a></li>
+                    <li><a href="#" class="hover:underline">Get Hired</a></li>
+                    <li><a href="#" class="hover:underline">Sell Creative Assets</a></li>
+                    <li><a href="#" class="hover:underline">Sell Freelance Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Find Talent -->
+            <div>
+                <h3 class="font-semibold mb-4">Find Talent</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Post a Job</a></li>
+                    <li><a href="#" class="hover:underline">Graphic Designers</a></li>
+                    <li><a href="#" class="hover:underline">Photographers</a></li>
+                    <li><a href="#" class="hover:underline">Video Editors</a></li>
+                    <li><a href="#" class="hover:underline">Web Designers</a></li>
+                    <li><a href="#" class="hover:underline">Illustrators</a></li>
+                </ul>
+            </div>
+
+            <!-- Behance -->
+            <div>
+                <h3 class="font-semibold mb-4">Behance</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">About Behance</a></li>
+                    <li><a href="#" class="hover:underline">Adobe Portfolio</a></li>
+                    <li><a href="#" class="hover:underline">Download the App</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#" class="hover:underline">Help Center</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h3 class="font-semibold mb-4">Social</h3>
+                <ul>
+                    <li><a href="#" class="flex items-center space-x-2 hover:underline">
+                            <i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 hover:underline">
+                            <i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 hover:underline">
+                            <i class="fab fa-pinterest"></i><span>Pinterest</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 hover:underline">
+                            <i class="fab fa-facebook"></i><span>Facebook</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 hover:underline">
+                            <i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer bottom section -->
+        <div class="mt-8 border-t border-gray-700 pt-4 text-sm text-gray-400">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <!-- Right side: Copyright info -->
+                <div class="text-gray-500">
+                    <span>© 2024 Adobe Inc. All rights reserved.</span>
+                </div>
+
+                <!-- Left side: English and links -->
+                <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0">
+                    <a href="#" class="hover:text-white">English</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-white">TOU</a>
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Community</a>
+                    <a href="#" class="hover:text-white">Cookie preferences</a>
+                    <a href="#" class="hover:text-white">Do not sell or share my personal information</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+    <script src="./home.js"></script>
+</body>
+
+</html>
