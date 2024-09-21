@@ -1,20 +1,17 @@
 function showContent(contentId) {
-    // Hide all content
     document.querySelectorAll('.service-content').forEach(content => {
         content.classList.add('hidden');
     });
 
-    // Show the clicked content
     document.getElementById(contentId).classList.remove('hidden');
 }
 
-// Attach event listeners to each sidebar button
 document.querySelectorAll('.sidebar-btn').forEach(button => {
     button.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
+        event.preventDefault(); 
 
-        const targetContent = button.getAttribute('data-target'); // Get the target content ID
-        showContent(targetContent); // Show the corresponding content
+        const targetContent = button.getAttribute('data-target'); 
+        showContent(targetContent); 
     });
 });
 
